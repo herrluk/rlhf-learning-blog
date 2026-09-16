@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>怎样在线编辑算法学习文档</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f6f1;color:#233633;font:17px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}main{max-width:860px;margin:40px auto;padding:28px 34px;background:#fffefa;border:1px solid #dbe2d9;border-radius:16px}h1{font-size:clamp(26px,5vw,38px);line-height:1.35}h2{margin-top:32px;font-size:23px}a{color:#17674f;text-underline-offset:4px}li{margin:12px 0}code{overflow-wrap:anywhere;background:#e2f1e8;padding:2px 5px;border-radius:4px}pre{overflow:auto;background:#142c29;color:#fff;padding:18px;border-radius:10px;line-height:1.7}.note{padding:16px 20px;background:#e2f1e8;border-left:4px solid #17674f}nav{display:flex;gap:20px;flex-wrap:wrap}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border-bottom:1px solid #dbe2d9;padding:10px;text-align:left;vertical-align:top}@media(max-width:600px){main{margin:12px;padding:22px 18px}}
+</style>
+</head>
+<body><main>
+<nav><a href="学习文档/index.html">← 算法目录</a><a href="../index.html">博客首页</a></nav>
+<h1>怎样在线编辑这套文档</h1>
+<p>阅读在博客里完成，修改在 GitHub 网页里完成。用 <strong>herrluk</strong> 账号登录后，提交的修改会保存到仓库，并自动生成新版网页。</p>
+<h2>改一段讲解，只需三步</h2>
+<ol>
+<li>打开章节，点击顶部的<strong>“在线编辑本页”</strong>。例如哈希章节会打开 <code>学习文档源码/content/01.py</code>。</li>
+<li>用浏览器搜索找到要改的那句话，修改引号里的中文。保留引号、逗号和缩进；文字里需要单引号时可改用中文引号。文件同时保存讲解、例子与代码，并不是网页排版代码。</li>
+<li>点击 <strong>Commit changes…</strong>，写一句修改说明，提交到 <code>main</code>。到 <a href="https://github.com/herrluk/rlhf-learning-blog/actions">发布记录</a> 查看本次运行；绿色成功后，刷新博客。</li>
+</ol>
+<p><a href="https://github.com/herrluk/rlhf-learning-blog/edit/main/hot100-150/学习文档源码/content/01.py">直接编辑：01 哈希查找与集合 →</a></p>
+<pre>'summary': '这里是一道题的题意说明。',
+'insight': '这里解释为什么会想到这个方法。',</pre>
+<p class="note">这里提供的是在线源码编辑。网页正文不能像 Word 那样直接点击改字。优先修改短句；如果改到算法代码，自动检查会先执行示例。检查失败时，新版本不会发布，可以从发布记录查看错误并修正。</p>
+<h2>不同内容在哪里改</h2>
+<table><thead><tr><th>要修改的内容</th><th>源文件</th></tr></thead><tbody>
+<tr><td>每章题解、例子、Python 代码</td><td><code>学习文档源码/content/01.py</code> 至 <code>17.py</code></td></tr>
+<tr><td>章节前置知识、基础概念</td><td><code>学习文档源码/foundations.py</code></td></tr>
+<tr><td>每题状态与变量说明</td><td><code>学习文档源码/problem_states.py</code></td></tr>
+<tr><td>题单、考频和优先级</td><td><code>Hot100重新分类与面试备考大纲.md</code>；题目编号、章节数量须与正文对应</td></tr>
+<tr><td>高频 20 题的补充内容</td><td><code>高频20题源码/content.py</code>；通用题解和代码沿用各章源文件</td></tr>
+<tr><td>九题手册的排版与演示</td><td><code>滑动窗口九题源码/template.html</code>；通用代码沿用各章源文件</td></tr>
+</tbody></table>
+<h2>一次修改多个文件</h2>
+<p>打开 <a href="https://github.dev/herrluk/rlhf-learning-blog">浏览器编辑器 github.dev</a>，在左侧展开 <code>hot100-150</code>。也可以在 GitHub 仓库页面按英文句号 <code>.</code> 打开。修改后在“源代码管理”中暂存、填写说明并提交推送，发布流程相同。</p>
+<h2>保存、发布与本地文件的关系</h2>
+<p>GitHub 中每次提交都有历史记录，可以查看差异、找回旧内容。生成的章节 HTML 是发布结果；以后应修改源码。线上修改不会自动写回电脑里的原始 <code>hot100+150</code> 目录。</p>
+<p>本地继续修改时，先同步博客仓库的最新内容，再编辑其中的 <code>hot100-150</code>。避免用旧的本地文件覆盖网页端的新修改。</p>
+<p><a href="https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files">GitHub 官方：网页编辑文件</a> · <a href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor">GitHub 官方：github.dev 编辑器</a></p>
+</main></body></html>
