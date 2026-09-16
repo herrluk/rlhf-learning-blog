@@ -1,0 +1,13 @@
+/* 数学符号融入中文行文；程序标识符与完整代码保持同一类字形。 */
+math{font-family:StudyMath,"STIX Two Math","Cambria Math",math;font-size:1.05em;font-weight:400;color:inherit}
+/* 滚动容器使用 flex 的首项基线；普通 inline-block 在 overflow:auto 时会改用盒底基线。 */
+.math-run{display:inline-flex;align-items:baseline;vertical-align:baseline;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:0 .15em;line-height:normal;white-space:nowrap;scrollbar-width:thin}
+.math-run>math{flex:none}
+.math-identifier{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:.86em;font-style:normal}
+code.inline-identifier{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:.88em;padding:.06em .28em;border-radius:4px;background:rgba(38,99,79,.065);overflow-wrap:anywhere;font-weight:400}
+.math-display{display:block;width:fit-content;max-width:100%;margin:14px auto;padding:12px 18px;font-size:1.15em;line-height:1.8}
+.formula-card{margin:18px 0;padding:12px 18px;border-left:3px solid var(--green);background:var(--soft);border-radius:0 8px 8px 0}
+.formula-card p{margin:4px 0;color:var(--muted);font-size:13px}
+.equation{font-family:inherit;overflow-x:auto}
+@media(max-width:760px){.math-display{font-size:1.03em;padding:10px 4px}.formula-card{padding:10px 12px}.math-run{max-width:100%}}
+@media print{.math-run{overflow:visible}.math-display{break-inside:avoid}math{font-family:StudyMath,math}}
