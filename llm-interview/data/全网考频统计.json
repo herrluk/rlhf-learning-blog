@@ -1,0 +1,1569 @@
+{
+  "retrieved_on": "2026-09-08",
+  "unit": "一手自述帖子内主题出现量",
+  "sample_sizes": {
+    "牛客": 13,
+    "小红书": 17,
+    "知乎": 11
+  },
+  "topics": [
+    {
+      "topic": "rl_algorithms",
+      "label": "PPO / GRPO 原理与选型",
+      "platforms": {
+        "牛客": {
+          "count": 8,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N03",
+            "N04",
+            "N05",
+            "N06",
+            "N07",
+            "N08",
+            "N11",
+            "N12"
+          ]
+        },
+        "小红书": {
+          "count": 4,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X01",
+            "X05",
+            "X08",
+            "X11"
+          ]
+        },
+        "知乎": {
+          "count": 3,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z03",
+            "Z07",
+            "Z12"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 4,
+        "groups": [
+          "W03",
+          "Z01",
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "reward",
+      "label": "奖励模型 / 奖励设计",
+      "platforms": {
+        "牛客": {
+          "count": 6,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N02",
+            "N05",
+            "N06",
+            "N08",
+            "N11",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X03",
+            "X06",
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z07"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 4,
+        "groups": [
+          "W03",
+          "Z01",
+          "Z04",
+          "Z06"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "peft",
+      "label": "LoRA / PEFT / 微调方法",
+      "platforms": {
+        "牛客": {
+          "count": 5,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N01",
+            "N02",
+            "N05",
+            "N06",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X01"
+          ]
+        },
+        "知乎": {
+          "count": 3,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z03",
+            "Z07",
+            "Z20"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 4,
+        "groups": [
+          "G03",
+          "O01",
+          "W07",
+          "W10"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "attention",
+      "label": "Transformer / Attention",
+      "platforms": {
+        "牛客": {
+          "count": 5,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N01",
+            "N02",
+            "N08",
+            "N11",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 8,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X01",
+            "X03",
+            "X06",
+            "X08",
+            "X11",
+            "X13",
+            "X15",
+            "X17"
+          ]
+        },
+        "知乎": {
+          "count": 10,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z03",
+            "Z07",
+            "Z09",
+            "Z14",
+            "Z15",
+            "Z16",
+            "Z17",
+            "Z18",
+            "Z19",
+            "Z20"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "O01",
+          "O02"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "sft",
+      "label": "SFT 目标、数据组织与实现",
+      "platforms": {
+        "牛客": {
+          "count": 4,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N01",
+            "N03",
+            "N04",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X01",
+            "X10",
+            "X16"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "W10",
+          "Z06"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "data",
+      "label": "训练数据来源、清洗与配比",
+      "platforms": {
+        "牛客": {
+          "count": 4,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N05",
+            "N08",
+            "N10",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 6,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X01",
+            "X02",
+            "X03",
+            "X06",
+            "X14",
+            "X16"
+          ]
+        },
+        "知乎": {
+          "count": 4,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z07",
+            "Z09",
+            "Z12",
+            "Z20"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 3,
+        "groups": [
+          "G03",
+          "W03",
+          "Z10"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "advantage",
+      "label": "优势函数 / GAE / 组内优势",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N04",
+            "N06",
+            "N08"
+          ]
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X01",
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z03",
+            "Z07"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 4,
+        "groups": [
+          "W03",
+          "Z01",
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "inference",
+      "label": "推理框架与推理加速",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N02",
+            "N06",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X11",
+            "X13",
+            "X14"
+          ]
+        },
+        "知乎": {
+          "count": 5,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z14",
+            "Z15",
+            "Z16",
+            "Z17",
+            "Z19"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "memory",
+      "label": "KV Cache 与显存分析/优化",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N02",
+            "N11",
+            "N12"
+          ]
+        },
+        "小红书": {
+          "count": 4,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X05",
+            "X08",
+            "X11",
+            "X13"
+          ]
+        },
+        "知乎": {
+          "count": 3,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z14",
+            "Z16",
+            "Z17"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "O02",
+          "W07"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "position",
+      "label": "位置编码与长上下文位置扩展",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N02",
+            "N10",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X03"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z12"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rlhf_flow",
+      "label": "RLHF / GRPO 完整流程",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N01",
+            "N03",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X05",
+            "X10"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z12",
+            "Z14"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "W03",
+          "Z06"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rl_coding",
+      "label": "PPO / DPO 核心代码",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N05",
+            "N08",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 0,
+          "denominator": 17,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "precision",
+      "label": "BF16 / FP16 / 混合精度",
+      "platforms": {
+        "牛客": {
+          "count": 2,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N05",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z14"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "Z02"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "distributed",
+      "label": "分布式训练 / ZeRO / 并行选型",
+      "platforms": {
+        "牛客": {
+          "count": 2,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N09",
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 4,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X05",
+            "X08",
+            "X13",
+            "X16"
+          ]
+        },
+        "知乎": {
+          "count": 5,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z14",
+            "Z15",
+            "Z16",
+            "Z17",
+            "Z18"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 5,
+        "groups": [
+          "G01",
+          "G02",
+          "O01",
+          "Z02",
+          "Z11"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "stability",
+      "label": "数值与训练异常排查",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N02",
+            "N10",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X05",
+            "X08",
+            "X14"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z14"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "Z10"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rl_framework",
+      "label": "verl / TRL / slime 等训练框架",
+      "platforms": {
+        "牛客": {
+          "count": 2,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N03",
+            "N06"
+          ]
+        },
+        "小红书": {
+          "count": 7,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X04",
+            "X05",
+            "X06",
+            "X07",
+            "X08",
+            "X09",
+            "X14"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z14",
+            "Z19"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 4,
+        "groups": [
+          "G01",
+          "W01",
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "dpo",
+      "label": "DPO 原理或与在线 RL 比较",
+      "platforms": {
+        "牛客": {
+          "count": 4,
+          "denominator": 13,
+          "band": "高",
+          "source_ids": [
+            "N08",
+            "N11",
+            "N12",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z12"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 3,
+        "groups": [
+          "Z01",
+          "Z04",
+          "Z06"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "architecture",
+      "label": "模型架构比较",
+      "platforms": {
+        "牛客": {
+          "count": 3,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N01",
+            "N11",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X03",
+            "X04"
+          ]
+        },
+        "知乎": {
+          "count": 3,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z03",
+            "Z07",
+            "Z12"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "G03"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "kl",
+      "label": "KL 计算及约束",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N03"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "offpolicy",
+      "label": "on-policy / off-policy 与策略差异",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N03"
+          ]
+        },
+        "小红书": {
+          "count": 5,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X01",
+            "X08",
+            "X09",
+            "X11",
+            "X12"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z03",
+            "Z07"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "pretrain",
+      "label": "预训练任务与预训练流程",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N10"
+          ]
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X02",
+            "X03",
+            "X16"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z12"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 3,
+        "groups": [
+          "G03",
+          "W07",
+          "Z10"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "communication",
+      "label": "NCCL / RDMA / 通信",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N09"
+          ]
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X12",
+            "X13"
+          ]
+        },
+        "知乎": {
+          "count": 3,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z14",
+            "Z16",
+            "Z18"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 3,
+        "groups": [
+          "G01",
+          "G02",
+          "Z11"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "optimizer",
+      "label": "优化器原理或实现",
+      "platforms": {
+        "牛客": {
+          "count": 2,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N05",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rl_foundation",
+      "label": "MDP 等强化学习基础",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N05"
+          ]
+        },
+        "小红书": {
+          "count": 0,
+          "denominator": 17,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "Z01"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "softmax",
+      "label": "softmax 数值稳定",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N03"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "agent",
+      "label": "Agent Loop / 工具交互",
+      "platforms": {
+        "牛客": {
+          "count": 2,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N06",
+            "N12"
+          ]
+        },
+        "小红书": {
+          "count": 4,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X09",
+            "X10",
+            "X11",
+            "X17"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z12"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "W09"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rl_variants",
+      "label": "DAPO / GSPO 等变体",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N06"
+          ]
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X08"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "norm",
+      "label": "归一化选择",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 0,
+          "denominator": 17,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z20"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "O01"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "moe",
+      "label": "MoE 架构",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N11"
+          ]
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X12",
+            "X13"
+          ]
+        },
+        "知乎": {
+          "count": 4,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z03",
+            "Z14",
+            "Z16",
+            "Z17"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "long_rl",
+      "label": "长程任务 RL 选型",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N07"
+          ]
+        },
+        "小红书": {
+          "count": 0,
+          "denominator": 17,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "long_context",
+      "label": "长文本处理",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N10"
+          ]
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X10",
+            "X16"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z12",
+            "Z20"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "evaluation",
+      "label": "模型评测、数据验证与能力保持",
+      "platforms": {
+        "牛客": {
+          "count": 2,
+          "denominator": 13,
+          "band": "中",
+          "source_ids": [
+            "N11",
+            "N13"
+          ]
+        },
+        "小红书": {
+          "count": 5,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X01",
+            "X02",
+            "X06",
+            "X16",
+            "X17"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z07",
+            "Z20"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "W07"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rl_deployment",
+      "label": "RL 多模型共卡 / 分卡部署",
+      "platforms": {
+        "牛客": {
+          "count": 0,
+          "denominator": 13,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X05"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "G01",
+          "W01"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "rl_performance",
+      "label": "RL 阶段耗时、吞吐与利用率",
+      "platforms": {
+        "牛客": {
+          "count": 0,
+          "denominator": 13,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X05",
+            "X09",
+            "X17"
+          ]
+        },
+        "知乎": {
+          "count": 1,
+          "denominator": 11,
+          "band": "低",
+          "source_ids": [
+            "Z14"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 4,
+        "groups": [
+          "G01",
+          "W01",
+          "Z02",
+          "Z04"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "profiling",
+      "label": "系统瓶颈分析与性能归因",
+      "platforms": {
+        "牛客": {
+          "count": 0,
+          "denominator": 13,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "小红书": {
+          "count": 3,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X12",
+            "X14",
+            "X15"
+          ]
+        },
+        "知乎": {
+          "count": 5,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z14",
+            "Z15",
+            "Z17",
+            "Z18",
+            "Z19"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 2,
+        "groups": [
+          "G02",
+          "O02"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "gpu_kernel",
+      "label": "CUDA / GPU 算子实现",
+      "platforms": {
+        "牛客": {
+          "count": 0,
+          "denominator": 13,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "小红书": {
+          "count": 2,
+          "denominator": 17,
+          "band": "中",
+          "source_ids": [
+            "X12",
+            "X13"
+          ]
+        },
+        "知乎": {
+          "count": 5,
+          "denominator": 11,
+          "band": "高",
+          "source_ids": [
+            "Z14",
+            "Z15",
+            "Z16",
+            "Z18",
+            "Z19"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 3,
+        "groups": [
+          "G01",
+          "O02",
+          "W01"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "quantization",
+      "label": "推理量化与低精度格式",
+      "platforms": {
+        "牛客": {
+          "count": 1,
+          "denominator": 13,
+          "band": "低",
+          "source_ids": [
+            "N06"
+          ]
+        },
+        "小红书": {
+          "count": 4,
+          "denominator": 17,
+          "band": "高",
+          "source_ids": [
+            "X11",
+            "X12",
+            "X13",
+            "X15"
+          ]
+        },
+        "知乎": {
+          "count": 2,
+          "denominator": 11,
+          "band": "中",
+          "source_ids": [
+            "Z14",
+            "Z19"
+          ]
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 1,
+        "groups": [
+          "O02"
+        ],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    },
+    {
+      "topic": "pretrain_coding",
+      "label": "CPT / 自回归预训练 loss 编程",
+      "platforms": {
+        "牛客": {
+          "count": 0,
+          "denominator": 13,
+          "band": "未观察到",
+          "source_ids": []
+        },
+        "小红书": {
+          "count": 1,
+          "denominator": 17,
+          "band": "低",
+          "source_ids": [
+            "X16"
+          ]
+        },
+        "知乎": {
+          "count": 0,
+          "denominator": 11,
+          "band": "未观察到",
+          "source_ids": []
+        }
+      },
+      "supplementary_resource_groups": {
+        "count": 0,
+        "groups": [],
+        "meaning": "整理资料覆盖组数，非面试考频，跨平台同源已合并"
+      }
+    }
+  ],
+  "notes": [
+    "高>=4帖，中2-3帖，低1帖；目的性样本，非行业概率。",
+    "Z13与X12跨平台高度重合，新增知乎分母排除Z13；不是完整跨平台身份审计。",
+    "新增知乎11帖中包含多场合辑、AI辅助整理和同作者不同面试；不等于11独立场面试。",
+    "旧牛客11/小红书17表保留为初版快照；本文件为扩展后的最新统计。"
+  ]
+}

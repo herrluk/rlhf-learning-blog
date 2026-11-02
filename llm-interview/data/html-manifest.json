@@ -1,0 +1,284 @@
+{
+  "generated_on": "2026-09-12",
+  "source_snapshot": "2026-09-08",
+  "chapters": [
+    {
+      "title": "模型与 Attention",
+      "file": "01-foundations.html",
+      "markdown": "01-模型基础与Attention.md",
+      "figures": [
+        {
+          "id": "f01-forward",
+          "anchor": "forward",
+          "kind": "flow",
+          "interactive": false
+        },
+        {
+          "id": "f01-mask",
+          "anchor": "forward",
+          "kind": "mask",
+          "interactive": false
+        },
+        {
+          "id": "f01-kv",
+          "anchor": "kv",
+          "kind": "kv",
+          "interactive": true
+        }
+      ]
+    },
+    {
+      "title": "预训练数据与优化",
+      "file": "02-pretraining.html",
+      "markdown": "02-预训练数据与优化.md",
+      "figures": [
+        {
+          "id": "f02-shift",
+          "anchor": "objective",
+          "kind": "shift",
+          "interactive": false
+        },
+        {
+          "id": "f02-data",
+          "anchor": "data",
+          "kind": "flow",
+          "interactive": false
+        },
+        {
+          "id": "f02-packing",
+          "anchor": "packing-code",
+          "kind": "packing",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "分布式训练与显存",
+      "file": "03-distributed.html",
+      "markdown": "03-分布式训练与显存.md",
+      "figures": [
+        {
+          "id": "f03-zero",
+          "anchor": "dp",
+          "kind": "sharding",
+          "interactive": false
+        },
+        {
+          "id": "f03-tp",
+          "anchor": "tp-pp",
+          "kind": "tp",
+          "interactive": false
+        },
+        {
+          "id": "f03-pp",
+          "anchor": "tp-pp",
+          "kind": "pipeline",
+          "interactive": false
+        },
+        {
+          "id": "f03-checkpoint",
+          "anchor": "checkpoint",
+          "kind": "flow",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "SFT 与后训练数据",
+      "file": "04-sft.html",
+      "markdown": "04-SFT与后训练数据.md",
+      "figures": [
+        {
+          "id": "f04-mask",
+          "anchor": "sft-loss",
+          "kind": "sftmask",
+          "interactive": false
+        },
+        {
+          "id": "f04-lora",
+          "anchor": "lora",
+          "kind": "lora",
+          "interactive": false
+        },
+        {
+          "id": "f04-eval",
+          "anchor": "evaluation",
+          "kind": "flow",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "奖励模型与 DPO",
+      "file": "05-reward-dpo.html",
+      "markdown": "05-奖励模型与DPO.md",
+      "figures": [
+        {
+          "id": "f05-bt",
+          "anchor": "reward-model",
+          "kind": "flow",
+          "interactive": false
+        },
+        {
+          "id": "f05-dpo",
+          "anchor": "dpo-bias",
+          "kind": "dpo",
+          "interactive": true
+        },
+        {
+          "id": "f05-judge",
+          "anchor": "reward-failure",
+          "kind": "flow",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "PPO 与 GAE 推导",
+      "file": "06-ppo-gae.html",
+      "markdown": "06-PPO与GAE详细推导.md",
+      "figures": [
+        {
+          "id": "f06-policies",
+          "anchor": "components",
+          "kind": "flow",
+          "interactive": false
+        },
+        {
+          "id": "f06-gae",
+          "anchor": "gae",
+          "kind": "gae",
+          "interactive": true
+        },
+        {
+          "id": "f06-ppo",
+          "anchor": "ppo-clip",
+          "kind": "ppo",
+          "interactive": true
+        }
+      ]
+    },
+    {
+      "title": "GRPO、KL 与变体",
+      "file": "07-grpo-kl.html",
+      "markdown": "07-GRPO与KL及算法变体.md",
+      "figures": [
+        {
+          "id": "f07-group",
+          "anchor": "group",
+          "kind": "grpo",
+          "interactive": true
+        },
+        {
+          "id": "f07-norm",
+          "anchor": "normalization",
+          "kind": "norm",
+          "interactive": false
+        },
+        {
+          "id": "f07-kl",
+          "anchor": "kl",
+          "kind": "kl",
+          "interactive": true
+        },
+        {
+          "id": "f07-gradient",
+          "anchor": "kl-gradient",
+          "kind": "branches",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "RL Infra 架构与一致性",
+      "file": "08-rl-infra.html",
+      "markdown": "08-RLInfra架构与一致性.md",
+      "figures": [
+        {
+          "id": "f08-system",
+          "anchor": "architecture",
+          "kind": "system",
+          "interactive": false
+        },
+        {
+          "id": "f08-publish",
+          "anchor": "weight-sync",
+          "kind": "publish",
+          "interactive": false
+        },
+        {
+          "id": "f08-queue",
+          "anchor": "async",
+          "kind": "queue",
+          "interactive": true
+        },
+        {
+          "id": "f08-global",
+          "anchor": "normalization",
+          "kind": "globalnorm",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "推理性能与 GPU 排障",
+      "file": "09-gpu-performance.html",
+      "markdown": "09-推理性能与GPU排障.md",
+      "figures": [
+        {
+          "id": "f09-serving",
+          "anchor": "serving",
+          "kind": "flow",
+          "interactive": false
+        },
+        {
+          "id": "f09-roofline",
+          "anchor": "roofline",
+          "kind": "roofline",
+          "interactive": true
+        },
+        {
+          "id": "f09-reduction",
+          "anchor": "kernels",
+          "kind": "reduction",
+          "interactive": false
+        },
+        {
+          "id": "f09-online",
+          "anchor": "online-softmax",
+          "kind": "online",
+          "interactive": false
+        }
+      ]
+    },
+    {
+      "title": "代码与手算练习",
+      "file": "10-code-lab.html",
+      "markdown": "10-代码与手算练习详解.md",
+      "figures": [
+        {
+          "id": "f10-shift",
+          "anchor": "ce-code",
+          "kind": "shift",
+          "interactive": false
+        },
+        {
+          "id": "f10-bpe",
+          "anchor": "bpe-code",
+          "kind": "bpe",
+          "interactive": false
+        },
+        {
+          "id": "f10-json",
+          "anchor": "stream-code",
+          "kind": "flow",
+          "interactive": false
+        }
+      ]
+    }
+  ],
+  "chapter_figures": 34,
+  "all_figures": 35,
+  "questions": 172,
+  "interactive_examples": 8
+}

@@ -1,0 +1,772 @@
+{
+  "retrieved_on": "2026-09-08",
+  "sources": [
+    {
+      "id": "Z01",
+      "title": "大模型面试八股（强化学习-理论）",
+      "url": "https://zhuanlan.zhihu.com/p/1900886106762880101",
+      "platform": "知乎",
+      "kind": "学习整理",
+      "summary": "强化学习概念、策略梯度、PPO 与对齐学习笔记。",
+      "topics": [
+        "rl_foundation",
+        "rl_algorithms",
+        "advantage",
+        "reward",
+        "dpo"
+      ],
+      "date_display": "编辑于 2026-06-03 15:25",
+      "count_in_frequency": false,
+      "origin_group": "Z01",
+      "access": "公开正文已读",
+      "note": "学习笔记，没有逐题区分本人面试经历。"
+    },
+    {
+      "id": "Z02",
+      "title": "2026 年 RL 方向面经合集",
+      "url": "https://zhuanlan.zhihu.com/p/2046740446353811230",
+      "platform": "知乎",
+      "kind": "题目汇编",
+      "summary": "汇集 RL 算法与 Infra 问题，包含 loss 归约、确定性、采样和框架比较。",
+      "topics": [
+        "rl_algorithms",
+        "advantage",
+        "kl",
+        "offpolicy",
+        "rl_variants",
+        "rl_framework",
+        "rl_performance",
+        "distributed",
+        "precision"
+      ],
+      "date_display": "编辑于 2026-06-06 23:59",
+      "count_in_frequency": false,
+      "origin_group": "Z02",
+      "access": "公开正文已读",
+      "note": "作者明确说明综合知乎面经和自己的讨论见解；不按 35 场面试计数。"
+    },
+    {
+      "id": "Z03",
+      "title": "大模型面经（强化学习方向）",
+      "url": "https://zhuanlan.zhihu.com/p/30699189617",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "PPO/GAE、SAC 熵、on/off-policy、LoRA 初始化与矩阵秩、模型比较。",
+      "topics": [
+        "rl_algorithms",
+        "advantage",
+        "offpolicy",
+        "peft",
+        "attention",
+        "architecture",
+        "moe"
+      ],
+      "date_display": "发布于 2025-03-17 09:47",
+      "count_in_frequency": true,
+      "origin_group": "Z03",
+      "access": "公开正文已读",
+      "note": "公司未披露；原文把 on/off-policy 与在线/离线混用，题目保留，答案需纠正。"
+    },
+    {
+      "id": "Z04",
+      "title": "[面经记录]LLM+RL 50问",
+      "url": "https://zhuanlan.zhihu.com/p/1974870853121508975",
+      "platform": "知乎",
+      "kind": "自述与延伸混合",
+      "summary": "偏好训练、PPO 裁剪梯度、奖励饱和、旧采样、熵坍塌和异步训练追问。",
+      "topics": [
+        "rl_algorithms",
+        "reward",
+        "advantage",
+        "kl",
+        "offpolicy",
+        "dpo",
+        "rl_framework",
+        "rl_performance",
+        "rl_variants"
+      ],
+      "date_display": "编辑于 2026-01-06 23:26",
+      "count_in_frequency": false,
+      "origin_group": "Z04",
+      "access": "公开正文已读",
+      "note": "明确混合“被问到”和“可以拓展到”的问题，不能把全部条目计作亲历考题。"
+    },
+    {
+      "id": "Z05",
+      "title": "LLM RL +RL Infra面经",
+      "url": "https://zhuanlan.zhihu.com/p/2049823086212542992",
+      "platform": "知乎",
+      "kind": "答案整理/同源",
+      "summary": "为 RL 与 Infra 汇编提供答案；题序和问题与 Z02 高度重合。",
+      "topics": [
+        "rl_algorithms",
+        "advantage",
+        "kl",
+        "offpolicy",
+        "rl_framework"
+      ],
+      "date_display": "编辑于 2026-06-15 12:01",
+      "count_in_frequency": false,
+      "origin_group": "Z02",
+      "access": "公开正文已读",
+      "note": "与 Z02 合为同源组，答案不作为技术权威。"
+    },
+    {
+      "id": "Z06",
+      "title": "大模型强化学习面试（一）",
+      "url": "https://zhuanlan.zhihu.com/p/2054972879264019297",
+      "platform": "知乎",
+      "kind": "题目讲解",
+      "summary": "SFT mask、偏好标注、参考策略、奖励漏洞与 RLAIF。",
+      "topics": [
+        "sft",
+        "reward",
+        "dpo",
+        "rlhf_flow"
+      ],
+      "date_display": "发布于 2026-06-29 17:06",
+      "count_in_frequency": false,
+      "origin_group": "Z06",
+      "access": "公开正文已读",
+      "note": "多处“一定”“铁律”式答案缺少条件，不用于考频。"
+    },
+    {
+      "id": "Z07",
+      "title": "大模型强化学习面经",
+      "url": "https://zhuanlan.zhihu.com/p/659551066",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "从游戏 RL 转向 LLM 的求职记录，包含 GAE、PPO/DQN、RM 可靠性和模型选型。",
+      "topics": [
+        "rl_algorithms",
+        "advantage",
+        "offpolicy",
+        "reward",
+        "peft",
+        "attention",
+        "architecture",
+        "data",
+        "evaluation"
+      ],
+      "date_display": "编辑于 2023-10-10 11:07",
+      "count_in_frequency": true,
+      "origin_group": "Z07",
+      "access": "公开正文已读",
+      "note": "多家公司汇总只计一帖；与 W02 为同源。"
+    },
+    {
+      "id": "Z08",
+      "title": "【清华代码熊】大模型 RL 强化学习面试题解析（26暑期实习）",
+      "url": "https://zhuanlan.zhihu.com/p/2038572890778513652",
+      "platform": "知乎",
+      "kind": "图片题集未读",
+      "summary": "正文只有题集介绍，具体问题在图片中。",
+      "topics": [],
+      "date_display": "发布于 2026-05-15 10:57",
+      "count_in_frequency": false,
+      "origin_group": "Z08",
+      "access": "公开正文已读",
+      "note": "未完成图片逐题核验，排除题目与频次统计。"
+    },
+    {
+      "id": "Z09",
+      "title": "某独角兽公司LLM预训练数据一面",
+      "url": "https://zhuanlan.zhihu.com/p/1988706292194371230",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "预训练数据的 MinHash/LSH、空白归一化、规则与模型过滤、表格解析及 Attention。",
+      "topics": [
+        "data",
+        "attention"
+      ],
+      "date_display": "编辑于 2025-12-28 21:47",
+      "count_in_frequency": true,
+      "origin_group": "Z09",
+      "access": "公开正文已读",
+      "note": "仅标记实际问到的项目部分；文末“10问”的扩展不全部作为原题。"
+    },
+    {
+      "id": "Z10",
+      "title": "大模型面试118题（四）：预训练与数据",
+      "url": "https://zhuanlan.zhihu.com/p/2057133935956595254",
+      "platform": "知乎",
+      "kind": "题目汇编",
+      "summary": "预训练目标、数据治理、Scaling Law、MTP、训练异常和课程学习。",
+      "topics": [
+        "pretrain",
+        "data",
+        "stability"
+      ],
+      "date_display": "发布于 2026-07-05 16:20",
+      "count_in_frequency": false,
+      "origin_group": "Z10",
+      "access": "公开正文已读",
+      "note": "文中的“高频”“2026新题”属于作者标签，不纳入本地考频。"
+    },
+    {
+      "id": "Z11",
+      "title": "大模型预训练-并行策略相关面经合集",
+      "url": "https://zhuanlan.zhihu.com/p/716019812",
+      "platform": "知乎",
+      "kind": "题目汇编",
+      "summary": "DP/TP/PP 优先级、SP/CP、Ulysses、EP 和网络带宽下的选型。",
+      "topics": [
+        "distributed",
+        "communication"
+      ],
+      "date_display": "发布于 2024-09-11 17:03",
+      "count_in_frequency": false,
+      "origin_group": "Z11",
+      "access": "公开正文已读",
+      "note": "未明确哪些是亲历题，作为并行专项的检索线索。"
+    },
+    {
+      "id": "Z12",
+      "title": "大模型面经 - 百度文心",
+      "url": "https://zhuanlan.zhihu.com/p/25779773906",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "百度文心 Agent 三轮，涉及架构、位置编码、预训练/RLHF、数据、幻觉和 tokenizer 编程。",
+      "topics": [
+        "architecture",
+        "position",
+        "pretrain",
+        "rlhf_flow",
+        "rl_algorithms",
+        "dpo",
+        "data",
+        "agent",
+        "long_context"
+      ],
+      "date_display": "编辑于 2025-03-13 18:23",
+      "count_in_frequency": true,
+      "origin_group": "Z12",
+      "access": "公开正文已读",
+      "note": ""
+    },
+    {
+      "id": "Z13",
+      "title": "字节 AI INFRA 一面复盘",
+      "url": "https://zhuanlan.zhihu.com/p/2077155882463506646",
+      "platform": "知乎",
+      "kind": "跨平台同源",
+      "summary": "CUDA 行最大值、TP Graph 故障、Router Replay/GEMM、量化收益归因。",
+      "topics": [
+        "gpu_kernel",
+        "profiling",
+        "quantization",
+        "rl_framework"
+      ],
+      "date_display": "编辑于 2026-08-31 12:16",
+      "count_in_frequency": false,
+      "origin_group": "X12",
+      "access": "公开正文已读",
+      "note": "与已纳入的小红书 X12 在题目、项目故障和描述细节上高度重合，保守去重；不据此断定作者身份。页面标注 AI 辅助创作。"
+    },
+    {
+      "id": "Z14",
+      "title": "AI infra 26秋招面经",
+      "url": "https://zhuanlan.zhihu.com/p/2017740483217081305",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "多家公司 Infra 记录：GEMM/scan、网络、推理缓存、量化、RL 采样与训练框架。",
+      "topics": [
+        "attention",
+        "memory",
+        "inference",
+        "gpu_kernel",
+        "profiling",
+        "precision",
+        "quantization",
+        "communication",
+        "rl_framework",
+        "rlhf_flow",
+        "rl_performance",
+        "stability",
+        "distributed",
+        "moe"
+      ],
+      "date_display": "编辑于 2026-04-20 23:43",
+      "count_in_frequency": true,
+      "origin_group": "Z14",
+      "access": "公开正文已读",
+      "note": "多家公司只计一帖；页面标注 AI 辅助创作；只统计分公司题目，末尾趋势总结不计。"
+    },
+    {
+      "id": "Z15",
+      "title": "AI Infra博士大厂面经",
+      "url": "https://zhuanlan.zhihu.com/p/2079535893883392746",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "技术段明确提及 vLLM/SGLang、GEMM、FlashAttention、PD 分离、分布式与性能分析。",
+      "topics": [
+        "inference",
+        "attention",
+        "gpu_kernel",
+        "distributed",
+        "profiling"
+      ],
+      "date_display": "发布于 2026-09-05 22:26",
+      "count_in_frequency": true,
+      "origin_group": "Z15",
+      "access": "公开正文已读",
+      "note": "大部分是求职流程建议；只计技术段明确提及的主题。"
+    },
+    {
+      "id": "Z16",
+      "title": "AI Infra实习面经（二）",
+      "url": "https://zhuanlan.zhihu.com/p/1907536883430437857",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "多家实习面试中的并行配比、显存、CUDA GEMM/方差/归约、MoE 通信与缓存。",
+      "topics": [
+        "memory",
+        "distributed",
+        "gpu_kernel",
+        "inference",
+        "moe",
+        "communication",
+        "attention"
+      ],
+      "date_display": "编辑于 2025-05-19 10:10",
+      "count_in_frequency": true,
+      "origin_group": "Z16",
+      "access": "公开正文已读",
+      "note": "标题及正文中的“小红书”是受面试公司，来源平台仍是知乎。"
+    },
+    {
+      "id": "Z17",
+      "title": "Infra&投机方向 秋招面经 第一弹",
+      "url": "https://zhuanlan.zhihu.com/p/2071253035511297484",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "投机推理的草稿/目标模型分离、Roofline、剪枝、drafter 训练、EP/TP 与缓存。",
+      "topics": [
+        "profiling",
+        "distributed",
+        "moe",
+        "attention",
+        "inference",
+        "memory"
+      ],
+      "date_display": "编辑于 2026-08-13 15:16",
+      "count_in_frequency": true,
+      "origin_group": "Z17",
+      "access": "公开正文已读",
+      "note": "缩写和模型版本未逐项核实，不将文章中的型号说法转写成事实。"
+    },
+    {
+      "id": "Z18",
+      "title": "AI infra 面试经验贴",
+      "url": "https://zhuanlan.zhihu.com/p/1970722821522061231",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "北美 Infra 转岗记录：GPU kernel、并行/通信调试、ML coding、scan/compaction、双缓冲。",
+      "topics": [
+        "gpu_kernel",
+        "attention",
+        "distributed",
+        "communication",
+        "profiling"
+      ],
+      "date_display": "编辑于 2025-12-25 21:59",
+      "count_in_frequency": true,
+      "origin_group": "Z18",
+      "access": "公开正文已读",
+      "note": "正文逐项区分遇到与没遇到；transpose 明确未遇到，不计为实考。个人星号只供原文参考。"
+    },
+    {
+      "id": "Z19",
+      "title": "百度 AI INFRA 一面复盘",
+      "url": "https://zhuanlan.zhihu.com/p/2077159583861233610",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "百度推训优化一面：Router Replay 数据流、vLLM 结构、Graph、确定性 GEMM 和精度。",
+      "topics": [
+        "rl_framework",
+        "inference",
+        "gpu_kernel",
+        "profiling",
+        "quantization",
+        "attention"
+      ],
+      "date_display": "发布于 2026-08-29 22:24",
+      "count_in_frequency": true,
+      "origin_group": "Z19",
+      "access": "公开正文已读",
+      "note": "与 Z13 使用相同项目但公司与面试问题不同，按一帖计；作者与其他样本的相关性仍保留。页面标注 AI 辅助创作。"
+    },
+    {
+      "id": "Z20",
+      "title": "国内20家公司大模型岗位面试经验汇总",
+      "url": "https://zhuanlan.zhihu.com/p/690801254",
+      "platform": "知乎",
+      "kind": "面试自述",
+      "summary": "多公司面经中的 Attention 编程、归一化、数据、长上下文、多模态评估与微调。",
+      "topics": [
+        "attention",
+        "norm",
+        "data",
+        "long_context",
+        "evaluation",
+        "peft"
+      ],
+      "date_display": "编辑于 2025-04-12 11:15",
+      "count_in_frequency": true,
+      "origin_group": "Z20",
+      "access": "公开正文已读",
+      "note": "只标记公司各轮题目；“预备面经/猎头提供”段未计入；与 W06 同源。"
+    },
+    {
+      "id": "W01",
+      "title": "AI Infra面试复盘！（万字长文）",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800217&ver=6952&signature=ty*xcl-S1MHUGPxG2X84FqGEXkuUWaebej93KW8V1n5DHcUv*WvSTefKDPRrkYElaK0XYbS5QsJEhSH*81ctvf7Ksb*cvNrU826M7WGF6T*MrnTHUXQMmXL7aSKcBRAL&new=1",
+      "platform": "微信公众号",
+      "kind": "题目讲解",
+      "summary": "GPU 层次、RL 共卡/分卡、权重同步与训练框架。",
+      "topics": [
+        "gpu_kernel",
+        "rl_framework",
+        "rl_deployment",
+        "rl_performance"
+      ],
+      "date_display": "2026年9月7日 21:04",
+      "count_in_frequency": false,
+      "origin_group": "W01",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "名为复盘，但正文以长篇教学为主，未区分实际问到和作者扩展。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "丁师兄大模型"
+    },
+    {
+      "id": "W02",
+      "title": "大模型强化学习方向面经",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800219&ver=6952&signature=oCuopDK-cwjLS1A-TrxAqPM4aaTUeRPoLz7PIT*fFjOPalN1je5StGzy72tg2OZO8069h5uXd0oHK1bIzRhaR0PiXXXG-cPwqW*3PsJD1fqc*jmd3dWxl1jWpoi132jj&new=1",
+      "platform": "微信公众号",
+      "kind": "转载",
+      "summary": "强化学习转大模型面经。",
+      "topics": [
+        "rl_algorithms",
+        "advantage",
+        "offpolicy",
+        "reward",
+        "peft"
+      ],
+      "date_display": "2023年10月8日 09:54",
+      "count_in_frequency": false,
+      "origin_group": "Z07",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "正文明确给出知乎原文，与 Z07 合为同源。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "包包算法笔记"
+    },
+    {
+      "id": "W03",
+      "title": "大模型面经答案—强化学习：理论解释与讲解",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800219&ver=6952&signature=UFjama1zUwfCqGVOQ5PTR*Bews-9tRig*4izqUprWSe-ie9bWqp2OVaoU3ZxK2f5h8wo5eAQbeXe6GyKgKicHQ0KKrv7Uvt9COyfl28goUlWf-xMmdyEzb2Bd7B8nux1&new=1",
+      "platform": "微信公众号",
+      "kind": "系列答案整理",
+      "summary": "PPO/DQN、GAE 参数、PPO 调参与 LLM 数据质量。",
+      "topics": [
+        "rl_algorithms",
+        "advantage",
+        "reward",
+        "data"
+      ],
+      "date_display": "2023年11月1日 18:31",
+      "count_in_frequency": false,
+      "origin_group": "W03",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "同系列的答案扩展，不是新增面试样本。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "瓦力算法学研所"
+    },
+    {
+      "id": "W04",
+      "title": "大模型面经—强化学习实践经验与思考阐释",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800219&ver=6952&signature=UFjama1zUwfCqGVOQ5PTR*Bews-9tRig*4izqUprWSdniC0b5rIcLjvqebV3QsOMuVAq1FINCj2ce*m4Xrd9oE0CgZI99TUtpklqR3qd1oiZa9d*zBMgF37udFWxktDY&new=1",
+      "platform": "微信公众号",
+      "kind": "系列答案整理",
+      "summary": "RL 与生成的关系、奖励排序、RM loss 和奖励误差。",
+      "topics": [
+        "reward",
+        "rlhf_flow"
+      ],
+      "date_display": "2024年1月24日 15:53",
+      "count_in_frequency": false,
+      "origin_group": "W03",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "与 W03 属于同一套题的理论/实践讲解，资源覆盖按一组计。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "瓦力算法学研所"
+    },
+    {
+      "id": "W05",
+      "title": "米哈游大模型算法 实习面经",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800219&ver=6952&signature=KQsJ3oezz3ZJhkALcQQKy-WmLKDXbhaAjyLoQrPd4cf4lTZsMpQMTXjUQuKm5sJ01W8CV9sV1FiTWpYmxMjsz8XKU9pw4hsJZmbzf7*ih3X-XRqhSMMAbrc4tN5dizZV&new=1",
+      "platform": "微信公众号",
+      "kind": "转载",
+      "summary": "米哈游：RM 基准、DPO 长度变化、指令遵循评估与学习率。",
+      "topics": [
+        "reward",
+        "dpo",
+        "evaluation",
+        "optimizer"
+      ],
+      "date_display": "2026年3月21日 21:17",
+      "count_in_frequency": false,
+      "origin_group": "N13",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "正文给出牛客原文；与 N13 合为同源。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "运筹Offer"
+    },
+    {
+      "id": "W06",
+      "title": "国内20家公司大模型岗位面试经验汇总",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800219&ver=6952&signature=HgX*FFzMTP477*Ec3SMVzgwoeWXAQLduBUchQJSA3jDcZTNkgmIGntWNZWBFsgZdurf43ipzJppoQdj1qKslrnSB9YU0AruMTwBfC6L-59k6WzqVuMNISdSP-gZOvtXo&new=1",
+      "platform": "微信公众号",
+      "kind": "转载",
+      "summary": "多公司多模态与 LLM 面试汇总。",
+      "topics": [
+        "attention",
+        "data",
+        "peft",
+        "evaluation"
+      ],
+      "date_display": "2024年4月14日 23:04",
+      "count_in_frequency": false,
+      "origin_group": "Z20",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "正文给出知乎原文，与 Z20 合为同源。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "深度学习自然语言处理"
+    },
+    {
+      "id": "W07",
+      "title": "大模型面试必备：模型训练与微调 15 问全解析",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800222&ver=6952&signature=5kN-uOfv03qwNIQ6jkGJdrTxkVJuhs0XIiHxl72SKbFLkXf3GFf-Pi-G0tS2wcLPr20NsOb18cAOgaPtZ1u2iWJ83IKu2Liwn6ImxzJV6SB86ztV-hohUPSxxP8tfTKx&new=1",
+      "platform": "微信公众号",
+      "kind": "题目汇编",
+      "summary": "预训练/微调选型、LoRA、蒸馏、评估与显存估算。",
+      "topics": [
+        "pretrain",
+        "peft",
+        "evaluation",
+        "memory"
+      ],
+      "date_display": "2026年4月1日 18:17",
+      "count_in_frequency": false,
+      "origin_group": "W07",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "包含通用教学和工业视觉问题；只抽取 LLM 相关线索。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "Nancy学AI"
+    },
+    {
+      "id": "W08",
+      "title": "面试面经｜大模型面试最全八股和答案（上）",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1788800222&ver=6952&signature=o2hOS5HIHcXHbk2qTeIxFAb-2SujwilvH9h7gA7FVNVddd5c6KKygMC2DpaDtp6uNOqAvw7urhH9nlMbuZbQrrhGY2YIi7YVixeiZvef9ghWeiaR5fAeNJSQ70GLe*Zm&new=1",
+      "platform": "微信公众号",
+      "kind": "转载题库",
+      "summary": "CPT 数据、遗忘、词表扩展、模型结构、微调与推理题库。",
+      "topics": [
+        "pretrain",
+        "data",
+        "peft",
+        "architecture"
+      ],
+      "date_display": "2023年11月8日 22:00",
+      "count_in_frequency": false,
+      "origin_group": "G03",
+      "access": "OpenCLI 直接读取公众号正文；搜狗跳转链接",
+      "note": "正文明确指向 jackaduma GitHub 题库；不当作一手面经。 当前链接含公开搜索跳转签名，可能过期；失效时按标题与公众号名称重搜。",
+      "account": "极市平台"
+    },
+    {
+      "id": "W09",
+      "title": "大模型 Agent 面试高频100题——基础篇",
+      "url": "https://mp.weixin.qq.com/s/Lv5n69-o-j8B_mp6636qlw",
+      "platform": "微信公众号",
+      "kind": "题目汇编",
+      "summary": "工具协议、Agent 执行失败、上下文管理和流式输出。",
+      "topics": [
+        "agent"
+      ],
+      "date_display": "2026年5月11日 12:00",
+      "count_in_frequency": false,
+      "origin_group": "W09",
+      "access": "公开正文已读",
+      "note": "直接读取 /s/ 公众号原文；题量与高频为原作者口径，不作为面试发生次数。",
+      "account": "老杨聊大模型"
+    },
+    {
+      "id": "W10",
+      "title": "AI大模型面试系列——微调专题",
+      "url": "https://mp.weixin.qq.com/s/2cwp6Zb4dAzYNlyrp4ZQUg",
+      "platform": "微信公众号",
+      "kind": "题目汇编",
+      "summary": "LoRA 初始化、继续训练、合并和 QLoRA/基座选型。",
+      "topics": [
+        "peft",
+        "sft"
+      ],
+      "date_display": "2025年1月13日 10:13",
+      "count_in_frequency": false,
+      "origin_group": "W10",
+      "access": "公开正文已读",
+      "note": "直接读取 /s/ 公众号原文；题量与高频为原作者口径，不作为面试发生次数。",
+      "account": "AI极客营"
+    },
+    {
+      "id": "G01",
+      "title": "LLM Training Infra 面试问题清单",
+      "url": "https://github.com/XFWang522/llm-rl-infra-interview",
+      "platform": "GitHub",
+      "kind": "题库",
+      "summary": "训练并行、DDP/FSDP、容错、RL 数据流和调度场景清单。",
+      "topics": [
+        "distributed",
+        "communication",
+        "gpu_kernel",
+        "rl_framework",
+        "rl_deployment",
+        "rl_performance"
+      ],
+      "date_display": "页面日期未单独核对",
+      "count_in_frequency": false,
+      "origin_group": "G01",
+      "access": "公开正文已读",
+      "note": "上轮已列作参考，本轮深入阅读；132 是该仓库条目数，不加入本地题量或考频。"
+    },
+    {
+      "id": "G02",
+      "title": "AI Infra 工程师面经（305 题版）",
+      "url": "https://riddlego.github.io/ai-infra-interview-305/",
+      "platform": "GitHub Pages",
+      "kind": "题库",
+      "summary": "读取总览、数据并行和训练平台设计目录，补 DDP、sampler、checkpoint 与调度。",
+      "topics": [
+        "distributed",
+        "communication",
+        "profiling"
+      ],
+      "date_display": "页面日期未单独核对",
+      "count_in_frequency": false,
+      "origin_group": "G02",
+      "access": "总览和两个专题目录；未声称逐篇读取 305 道答案",
+      "note": "305 为来源自述条目数；无原始逐场样本，频次不计。"
+    },
+    {
+      "id": "G03",
+      "title": "awesome_LLMs_interview_notes",
+      "url": "https://github.com/jackaduma/awesome_LLMs_interview_notes",
+      "platform": "GitHub",
+      "kind": "同源题库入口",
+      "summary": "W08 所注明的原始题库；本轮用已读公众号转载内容溯源。",
+      "topics": [
+        "pretrain",
+        "data",
+        "peft",
+        "architecture"
+      ],
+      "date_display": "页面日期未单独核对",
+      "count_in_frequency": false,
+      "origin_group": "G03",
+      "access": "通过 W08 原文注明的仓库链接与题目目录定位；仓库未逐页读取",
+      "note": "与 W08 同一来源组；不再重复算资料覆盖。"
+    },
+    {
+      "id": "G04",
+      "title": "AIGC-Interview-Book",
+      "url": "https://github.com/WeThinkIn/AIGC-Interview-Book",
+      "platform": "GitHub",
+      "kind": "资源导航",
+      "summary": "大模型训练/后训练/评估学习入口。",
+      "topics": [],
+      "date_display": "页面日期未单独核对",
+      "count_in_frequency": false,
+      "origin_group": "G04",
+      "access": "README 和“最高频100问”导读已读，导读主要是跳转地图",
+      "note": "不将标题中的100当成已提取100题，也不纳入覆盖统计。"
+    },
+    {
+      "id": "O01",
+      "title": "秋招面试总结分享 | Jack's Blog",
+      "url": "https://www.jackzhu.top/2024/11/30/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%E5%88%86%E4%BA%AB/index.html",
+      "platform": "个人博客",
+      "kind": "自述与学习材料混合",
+      "summary": "复习清单与手写 Attention/归一化/交叉熵线索。",
+      "topics": [
+        "attention",
+        "peft",
+        "distributed",
+        "norm"
+      ],
+      "date_display": "2024-11-30",
+      "count_in_frequency": false,
+      "origin_group": "O01",
+      "access": "公开正文已读",
+      "note": "后半有明确引用的学习内容，不把所有清单计作亲历；适合查漏补缺。"
+    },
+    {
+      "id": "O02",
+      "title": "硬核面经丨蚂蚁 AI Infra 实习从一面到三面实录",
+      "url": "https://www.10100.com/article/149156215",
+      "platform": "媒体转载",
+      "kind": "转载",
+      "summary": "蚂蚁三面中的性能归因、图融合、CUDA histogram 和量化。",
+      "topics": [
+        "gpu_kernel",
+        "profiling",
+        "quantization",
+        "memory",
+        "attention"
+      ],
+      "date_display": "2026-07-10；内文自述原帖发表于2026-04-18",
+      "count_in_frequency": false,
+      "origin_group": "O02",
+      "access": "公开正文已读",
+      "note": "媒体标注来自知乎草原小可汗；原帖精确 URL 未定位，保留二手等级，不计一手频次。"
+    },
+    {
+      "id": "N12",
+      "title": "智谱大模型agent算法面经 好细啊",
+      "url": "https://www.nowcoder.com/feed/main/detail/24952c828c59435abd3c302c97fa358d",
+      "platform": "牛客",
+      "kind": "面试自述",
+      "summary": "DPO 偏好对长度、GRPO 选型、tool mask、参数/KV 估算和流式解析。",
+      "topics": [
+        "dpo",
+        "rl_algorithms",
+        "agent",
+        "memory"
+      ],
+      "date_display": "02-13；页面未明示年份",
+      "count_in_frequency": true,
+      "origin_group": "N12",
+      "access": "公开正文已读",
+      "note": ""
+    },
+    {
+      "id": "N13",
+      "title": "米哈游大模型算法 实习面经",
+      "url": "https://www.nowcoder.com/feed/main/detail/553e51a130df41bb92ca6f98d7685967",
+      "platform": "牛客",
+      "kind": "面试自述",
+      "summary": "RM 分类与目标、DPO 长度偏差、指令遵循评价和学习率退火。",
+      "topics": [
+        "attention",
+        "optimizer",
+        "stability",
+        "reward",
+        "dpo",
+        "evaluation",
+        "architecture"
+      ],
+      "date_display": "03-16；页面未明示年份",
+      "count_in_frequency": true,
+      "origin_group": "N13",
+      "access": "公开正文已读",
+      "note": "W05 转载于2026-03-21，但不据转载时间补猜原帖年份。"
+    }
+  ],
+  "notes": [
+    "仅保留改写摘要与链接，不批量转载全文。",
+    "公众号搜索跳转签名是公开文章定位链接，可能过期；没有采集登录凭据。",
+    "题库、自述混合帖和转载只做题目线索，统计与亲历帖子分开。"
+  ]
+}
